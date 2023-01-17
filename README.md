@@ -1,16 +1,18 @@
 ## API Rest Documents
 
+**Version Java 17**
+
 El proyecto utiliza los algoritmos "SHA-256" y "SHA-512"
 
 Configuraciones iniciales:
-En el archivo "application.properties" se tiene que modificar para el uso de base de dato, user y password propias.
-Se puede mediante las variables de entorno: DB_NAME, DB_USER, DB_PASS
-o directamente ponerlas en el archivo application.properties
+- En el archivo "application.properties" se tiene que modificar para el uso de base de dato, user y password propias. Se puede mediante las variables de entorno: DB_NAME, DB_USER, DB_PASS o directamente ponerlas en el archivo application.properties
+
 
 ## Uso de la API
 
 - Las peticiones se hacen mediante form-data
 - Las peticiones para lista de documentos y documento por su hash comparten la misma url pero va a responder dependiendo si se le envia los parametros correctos por form-data o ninguno
+- Al intentar subir el mismo archivo, se le actualizará la fecha y en caso que tenga otro nombre tambien lo hará
 
 ## Endpoints
 - POST - api/documents/hash - Subida de archivos
