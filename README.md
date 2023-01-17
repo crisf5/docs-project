@@ -12,6 +12,11 @@ o directamente ponerlas en el archivo application.properties
 - Las peticiones se hacen mediante form-data
 - Las peticiones para lista de documentos y documento por su hash comparten la misma url pero va a responder dependiendo si se le envia los parametros correctos por form-data o ninguno
 
+## Endpoints
+- POST - api/documents/hash - Subida de archivos
+- GET - api/documents - Lista de archivos        
+- GET - api/documents - Mostrar un archivo por su hash (params = {"hashType", "hash"})
+
 ## Http Status de la API
 En las respuestas correctas se puede visualizar el mensaje en el header y tambien retorna el numero de http status con su significado en status.
 
