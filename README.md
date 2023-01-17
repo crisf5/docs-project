@@ -4,6 +4,8 @@
 
 El proyecto utiliza los algoritmos "SHA-256" y "SHA-512"
 
+Base de datos: PostgreSql
+
 Configuraciones iniciales:
 - En el archivo "application.properties" se tiene que modificar para el uso de base de dato, user y password propias. Se puede mediante las variables de entorno: DB_NAME, DB_USER, DB_PASS o directamente ponerlas en el archivo application.properties
 
