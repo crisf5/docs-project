@@ -109,17 +109,20 @@ public class DocumentServiceImple implements DocumentService {
             throw new ParamNotFound("hashType");
         }
 
-        if(hashType.equalsIgnoreCase("SHA-256")){
-            documentModel = documentRepository.findDocumentHash256(hash);
-            dto.setHash(documentModel.getHashSha256());
-        }else if(hashType.equalsIgnoreCase("SHA-512")){
-            documentModel = documentRepository.findDocumentHash512(hash);
-            dto.setHash(documentModel.getHashSha512());
-        }else{
+        try{
+
+            if(hashType.equalsIgnoreCase("SHA-256")){
+                documentModel = documentRepository.findDocumentHash256(hash);
+                dto.setHash(documentModel.getHashSha256());
+            }else if(hashType.equalsIgnoreCase("SHA-512")){
+                documentModel = documentRepository.findDocumentHash512(hash);
+                dto.setHash(documentModel.getHashSha512());
+            }else{
+                throw new DocumentNotFound();}
+
+        }catch (Exception e){
             throw new DocumentNotFound();
         }
-
-
 
         dto.setFileName(documentModel.getFileName());
         dto.setHash(documentModel.getHashSha256());
