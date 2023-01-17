@@ -3,8 +3,6 @@ package com.documentcba.doc.controller;
 import com.documentcba.doc.dto.DocumentCreatedResponseDTO;
 import com.documentcba.doc.dto.DocumentDTO;
 import com.documentcba.doc.dto.DocumentOneHashDTO;
-import com.documentcba.doc.exceptions.FileNotCreated;
-import com.documentcba.doc.model.DocumentModel;
 import com.documentcba.doc.service.DocumentService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -15,7 +13,6 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
-import java.util.function.Consumer;
 
 @RestController
 @RequestMapping("/api/documents")
