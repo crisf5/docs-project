@@ -25,5 +25,5 @@ Configuraciones iniciales:
 En las respuestas correctas se puede visualizar el mensaje en el header y tambien retorna el numero de http status con su significado en status.
 
 Excepciones:
-- 400 - Si se hace la peticion sin ingresar un archivo o el archivo esta vacio.
-- 404 - Si el hashType no es correcto (Algoritmos que se utilizan en el proyecto) o si el hash del archivo no se encuentra en la base de datos.
+- 400 - Si se hace la peticion sin ingresar un archivo o el archivo esta vacio o si el hashType no es correcto (Algoritmos que se utilizan en el proyecto).
+- 404 - Si el hash del archivo no se encuentra en la base de datos.
