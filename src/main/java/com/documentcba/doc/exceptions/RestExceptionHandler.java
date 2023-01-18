@@ -53,7 +53,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler{
 
         LocalDateTime date = LocalDateTime.now();
         ApiErrorDTO apiErrorDTO= new ApiErrorDTO(
-                date, HttpStatus.NOT_FOUND, e.getMessage(),
+                date, HttpStatus.BAD_REQUEST, e.getMessage(),
                 ((ServletWebRequest)request).getRequest().getRequestURI().toString()
         );
 
