@@ -14,7 +14,7 @@ Configuraciones iniciales:
 
 - Las peticiones se hacen mediante form-data
 - Las peticiones para lista de documentos y documento por su hash comparten la misma url pero va a responder dependiendo si se le envia los parametros correctos por form-data o ninguno
-- Al intentar subir el mismo archivo, se le actualizará la fecha y en caso que tenga otro nombre tambien lo hará
+- Al intentar subir el mismo archivo, se le actualizará la fecha mostrandosé en la respuesta y en caso que tenga otro nombre tambien se cambiará (Si es la primera vez que se sube el archivo entonces no se va a mostrar la fecha en la respuesta)
 
 ## Endpoints
 - POST - api/documents/hash - Subida de archivos
