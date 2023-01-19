@@ -1,8 +1,12 @@
 ## API Rest Documents
 
-**Version Java 17**
+Autor: **Cristian Fernandez**
+
+Version Java 17
 
 El proyecto utiliza los algoritmos "SHA-256" y "SHA-512"
+
+Se guarda en base de datos con el algoritmo pasado a **hexadecimal**
 
 Base de datos: PostgreSql
 
